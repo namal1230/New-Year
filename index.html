@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2025 New Year</title>
+    <style>
+      body{
+        background: black;
+      }
+
+      button{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background: blue;
+        color: white;
+        height: 50px;
+      }
+
+
+      .div1{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background: orange;
+        width: 600px;
+        aspect-ratio: 1/1;
+        display: none;
+        background: url("assets/JS8I.gif");
+      }
+
+      .div2{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 500px;
+        height: 500px;
+        background: url("assets/Count_to_Ten-1.gif");
+        display: none;
+        background-repeat: no-repeat;
+      }
+
+    </style>
+</head>
+<body>
+    <section>
+      <div class="div1"></div>
+    </section>
+    <div class="div2"></div>
+    <button onclick="clickmouse()">Start</button>
+
+    <script>
+      function clickmouse(){
+        document.getElementsByTagName('div')[0].style.display = 'none';
+        document.getElementsByTagName('div')[1].style.display = 'block';
+        setInterval(function2,10000);
+      }
+
+      const function2 = () => {
+        document.getElementsByTagName('div')[1].style.display = 'none';
+        document.getElementsByTagName('div')[0].style.display = 'block';
+      }
+
+
+    </script>
+</body>
+</html>
