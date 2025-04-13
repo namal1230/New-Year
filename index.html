@@ -16,7 +16,7 @@
         margin: auto;
         background: blue;
         color: white;
-        height: 50px;
+        height: 4vh;
       }
 
 
@@ -61,15 +61,20 @@
       function clickmouse(){
         document.getElementsByTagName('div')[0].style.display = 'none';
         document.getElementsByTagName('div')[1].style.display = 'block';
-        setInterval(function2,10000);
+        setTimeout(function2,10000);
       }
 
       const function2 = () => {
         document.getElementsByTagName('div')[1].style.display = 'none';
         document.getElementsByTagName('div')[0].style.display = 'block';
+        setTimeout(function3,10000);
       }
 
 
+      const function3 = () => {
+          console.log("in");
+          document.getElementsByTagName('div')[0].style.display = 'none';
+      }
     </script>
 </body>
 </html>
